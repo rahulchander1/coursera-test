@@ -11,24 +11,60 @@
   font-family: Helvetica;
 }
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
 .menuitem {
   height: 150px;
-  background-color: #808080;
+  background-color: #bebebe;
   border: 1px solid black;
-  margin_left:  auto;
+  margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.padding {
+  padding: 20px;
 }
 
 p {
-  margin-right: auto;
-  margin-left: auto;
+  color: black;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.headingp {
+  position: relative;
+  float: right;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border: 1px solid black;
+  margin-top: -1px;
+  margin-right: -1px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.pizzacolor {
+  background-color: #ffccbb;
   color: black;
 }
+
+.gbcolor {
+  background-color: yellow;
+  color: black;
+}
+
+.pepsicolor {
+  background-color: cyan;
+  color: black;
+}
+
 
 /* Simple Responsive Framework. */
 .row {
@@ -82,7 +118,7 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
+
   }
   .col-md-1 {
     width: 8.33%;
@@ -130,19 +166,25 @@ p {
 
 <div class="row">
 
-  <div class="col-lg-4 col-md-6">
+  <div class="col-lg-4 col-md-6 padding">
     <div class="menuitem"> 
-      <p>Pizza</p>
-      <p>Pizza is kind of cool</p>
+      <p class="headingp pizzacolor">Pizza</p>
+      <p>Our pizza is fantastic. We wait until enough people place orders for pizza, buy the pizzas with Dominos coupons and repackage them just for you.</p>
     </div>
   </div>
 
-  <div class="col-lg-4 col-md-6 menuitem">
-    <p>Garlic Bread</p>
+  <div class="col-lg-4 col-md-6 padding">
+    <div class="menuitem"> 
+      <p class="headingp gbcolor">Garlic Bread</p>
+      <p>Our garlic bread is fantastic. We wait until enough people place orders for it, buy the garlic bread with Pizzahut coupons and repackage them just for you.</p>
+    </div>
   </div>
 
-  <div class="col-lg-4 col-md-12 menuitem">
-    <p>Pepsi</p>
+  <div class="col-lg-4 col-md-12 padding">
+    <div class="menuitem"> 
+      <p class="headingp pepsicolor">Pepsi</p>
+      <p>Our Pepsi is fantastic. We wait until enough people place orders for pepsi, buy the pepsi with Costco coupons and repackage them just for you.</p>
+    </div>
   </div>
 
 </div>
